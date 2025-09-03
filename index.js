@@ -19,4 +19,12 @@ app.get("/update", (req, resp) => {
   resp.render("Update");
 });
 
+app.post("/update", (req,resp) => {
+  resp.redirect("/")
+})
+
+app.post("/add", (req,resp) => {
+  resp.redirect("/")
+})
+
 app.listen(3200);

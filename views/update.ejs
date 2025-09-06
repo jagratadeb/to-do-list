@@ -10,17 +10,15 @@
     <%- include('navbar') %>
     <div class="container">
         <h1>Update Task</h1>
-        <form class="todo-form" action="/update" method="post">
-            <input class="input" name="title" type="text" placeholder="enter task title">
-            <br>
-            <br>
-            <textarea  class="input" name="description" id="">
-
-            </textarea>
-            <br>
-            <br>
-            <button class="btn">Add Task</button>
-        </form>
+    <form class="todo-form" action="/update/<%= result._id %>" method="post">
+        <input value="<%= result.title %>" class="input" name="title" type="text" placeholder="enter task title">
+        <br>
+        <br>
+        <textarea class="input" name="description" id=""><%= result.description %></textarea>
+        <br>
+        <br>
+        <button class="btn">Update Task</button>
+    </form>
     </div>
 </body>
 </html>

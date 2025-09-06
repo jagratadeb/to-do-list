@@ -10,15 +10,17 @@
     <%- include('navbar') %>
     <div class="container">
         <h1>Update Task</h1>
-    <form class="todo-form" action="/update/<%= result._id %>" method="post">
+    <form class="todo-form" action="/update" method="post">
+        <input type="hidden" name="id" value="<%= result._id %>">
         <input value="<%= result.title %>" class="input" name="title" type="text" placeholder="enter task title">
         <br>
         <br>
         <textarea class="input" name="description" id=""><%= result.description %></textarea>
         <br>
         <br>
-        <button class="btn">Update Task</button>
+        <button class="btn" type="submit">Update Task</button>
     </form>
     </div>
+    <%- include('footer') %>
 </body>
 </html>

@@ -40,9 +40,7 @@ A simple and modern To-Do List web application built with Node.js, Express.js, M
    ```
 3. Start the server:
    ```bash
-   npm start
-   # or for development
-   npx nodemon index.js
+   nodemon index.js
    ```
 4. Open your browser and go to [http://localhost:3200](http://localhost:3200)
 

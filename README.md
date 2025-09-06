@@ -70,8 +70,5 @@ A simple and modern To-Do List web application built with Node.js, Express.js, M
 ## Author
 - Jagrata Deb
 
-## License
-This project is licensed under the ISC License.
-
 ---
 Made with ❤️ for learning Express.js, Node.js, and MongoDB.
